@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "056763d2-1159-4559-939e-a4d9cc6efeb7",
+		"name": "talycapglobal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7504881"
+	},
+	"item": [
+		{
+			"name": "findAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/v0/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"v0",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByIdentificacion",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificacion\":23445322,\r\n    \"tipo\":\"C\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/api/v0/usuario",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"v0",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
